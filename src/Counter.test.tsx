@@ -5,7 +5,7 @@ import {shallow} from 'enzyme'
 describe('Counter component',()=>{
   it('starts with a count of 0',()=>{
     const wrapper = shallow(<Counter/>)
-    const countState =wrapper.state().count
+    const countState =wrapper.state().counter
     expect(countState).toEqual(0)
   })
 })

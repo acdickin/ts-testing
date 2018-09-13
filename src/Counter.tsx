@@ -5,13 +5,13 @@ interface IProps{
 }
 class Counter extends React.Component{
   public state:IState={
-    count:0
+    counter:0
   }
   public increment =()=>{
-    this.setState({count:this.state.count+1});
+    this.setState({count:this.state.counter+1});
   }
   public decrement =()=>{
-    this.setState({count:this.state.count-1});
+    this.setState({count:this.state.counter-1});
   }
   public render(){
     const {count} =this.state;
